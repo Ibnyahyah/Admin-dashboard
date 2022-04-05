@@ -1,0 +1,258 @@
+@import "./global.css";
+
+.mainContent {
+  position: absolute;
+  margin-left: 220px;
+  margin-top: 73px;
+  width: calc(100vw - 265px);
+  height: 100%;
+  padding: 1em;
+}
+
+/* Efficiency Tab Panel Header */
+.react-tabs__tab-list {
+  font-size: var(--x-small-font);
+  color: var(--primary-color) !important;
+  font-weight: 500;
+  width: 100%;
+  border-bottom: 1px solid var(--nav-border-color) !important;
+}
+
+.react-tabs__tab--selected {
+  border: none !important;
+  /* bottom: 0 !important; */
+  color: var(--text-black) !important;
+  font-weight: 500;
+  border-radius: 0 !important;
+  border-bottom: 2px solid var(--blue-color) !important;
+}
+
+.react-tabs__tab {
+  color: var(--primary-color) !important;
+  padding-bottom: 1em !important;
+  font-size: var(--medium-font) !important;
+  border-bottom: 1px solid var(--nav-border-color) ;
+}
+
+/* to edit the react-tabs parent element */
+.react-tabs {
+  
+}
+
+.react-tabs__tab:focus {
+  /* border: none !important; */
+  border-bottom: 2px solid var(--blue-color) !important;
+}
+.tabpanelHeader {
+  display: flex;
+  flex-direction: row;
+  gap: 15em;
+  /* justify-content: space-between; */
+  align-items: center;
+  width: 100%;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.tpanelTitle {
+  font-size: var(--large-font);
+  font-weight: bold;
+  color: var(--text-black);
+  min-width: max-content;
+}
+
+.tpanelSearchWrapper {
+  position: relative;
+}
+
+.tpanelSearch {
+  border-radius: 4px;
+  border: 1.5px solid var(--google-grey);
+  font-size: var(--small-font);
+  padding: 0.7em 3em;
+  color: var(--google-gre) !important;
+  min-width: 220px;
+  max-width: 150px;
+}
+
+.tpanelSearchIcon{
+  position: absolute;
+  left: 10px;
+  top: 13px;
+}
+
+.tpanelBtn {
+  background-color: var(--blue-color);
+  padding: 0.7em 1.5em;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  font-size: var(--small-font);
+}
+
+.tpanelRow {
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+  align-items: center;
+  justify-content: space-between;
+  width: max-content;
+}
+
+.tpanelRowOne {
+}
+
+.selectOption {
+  border: 1.5px solid var(--google-grey);
+  border-radius: 3px;
+  font-size: var(--small-font);
+  color: var(--text-black);
+  padding: 0.7em;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.filterWrapper {
+  border-right: 1px solid var(--google-grey);
+  padding-right: .7em 1em;
+}
+
+.chartWidget{
+  border-radius: 14px;
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  width: fit-content;
+  margin-bottom: 2em;
+  justify-content: center;
+  align-items: center;
+  /* padding: 1em; */
+  border: 1px solid var(--google-grey);
+}
+
+
+/* Chart Header Title */
+.chartHeaderRow{
+display: flex;
+padding: 0;
+flex-direction: row;
+align-items: center;
+gap: 1em;
+}
+
+.chartSide{
+  border-right: 1px solid var(--google-grey);
+  padding: 1em;
+}
+
+.chartHeaderContainer{
+  display: flex;
+  align-items: center;
+  color: var(--text-black);
+  justify-content: space-between;
+  width: 100%;
+}
+
+.perc{
+color: green;
+background-color: var(--green-opacity);
+padding: .3em 1em;
+border-radius: 4px;
+font-size: var(--x-small-font);
+}
+
+.dot1{
+  padding: .4em;
+  background-color: orange;
+  border-radius: 4px;
+}
+.dot2{
+  padding: .5em;
+  background-color: blue;
+  border-radius: 4px;
+}
+
+.dot3{
+  padding: .5em;
+  background-color: #FB6491;
+  border-radius: 4px;
+}
+
+.dot4{
+  padding: .5em;
+  background-color: #07C9E2;
+  border-radius: 4px;
+}
+
+.chartContainer{
+flex: 4;
+}
+
+.tabXText{
+  font-size: var(--large-font);
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+}
+
+.tabXSmallText{
+font-size: var(--small-font);
+padding-right: .5em;
+margin: 0;
+}
+
+.highPrior{
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  /* height: fit-content; */
+  gap: .5em;
+  border-right: 2px solid var(--google-grey);
+}
+
+.calendarWrap{
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+  border: 1px solid var(--google-grey);
+  padding: .3em 1em;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.calendarText{
+  margin: 0;
+}
+
+/* Time Card Container */
+.timeCardWrap{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  padding-right: 1em;
+}
+
+.timeCard{
+  background-color: var(--nav-border-color);
+  border-radius: 7px;
+  padding: 1em;
+  border: 1.5px solid var(--google-grey);
+  width: 150px;
+}
+
+.timeText{
+  color: var(--primary-color);
+  width: max-content;
+  font-size: var(--small-font);
+}
+
+.timeMins{
+  color: var(--text-black);
+  font-size: var(--large-font);
+  font-weight: bolder;
+}

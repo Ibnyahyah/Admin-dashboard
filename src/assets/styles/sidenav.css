@@ -1,0 +1,90 @@
+@import "../styles/global.css";
+
+.sidenavContainer {
+  width: var(--sidenav--width);
+  /* background-color: red; */
+  border-right: 1px solid var(--nav-border-color);
+  left: 0;
+  position: fixed;
+  height: 100%;
+  padding: 10px;
+  background-color: #fff;
+  z-index: 11;
+}
+
+.adminName {
+  font-weight: bold;
+  line-height: 0;
+  font-size: var(--small-font);
+}
+
+.adminMail {
+  font-size: var(--x-small-font);
+  line-height: 1;
+  font-weight: 500;
+  color: var(--primary-color);
+}
+
+.accountWrapper {
+  border: 1px solid var(--nav-border-color);
+  border-radius: 4px;
+  padding: 1em;
+  margin-top: 1em;
+}
+
+.sideNavLinksWrapper {
+  margin: 1em 0 0 0;
+}
+
+.sideNavLink {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 85%;
+  cursor: pointer;
+}
+
+.sideLinkLeft {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1em;
+}
+
+.sideNavIcon {
+}
+
+.downArrow{
+  transform: rotate(90deg) !important;
+}
+
+.sideNavText {
+  font-weight: 500;
+  font-size: var(--medium-font);
+  min-width: max-content;
+  color: var(--primary-color);
+}
+
+.isActive {
+  font-weight: 500;
+  font-size: var(--medium-font);
+  min-width: max-content;
+  color: var(--sideNav-hover-color) !important;
+}
+
+.dropDown {
+  padding-left: 1em;
+}
+
+.dropDown > :first-child {
+  border-left: 1px solid var(--google-grey);
+  color: black !important;
+  font-weight: bold;
+}
+
+.dropDownText {
+  cursor: pointer;
+  color: var(--primary-color);
+  padding-left: 1em;
+}

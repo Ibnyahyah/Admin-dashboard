@@ -1,0 +1,127 @@
+@import "../styles/global.css";
+
+.navbar {
+  background-color: #fff;
+  position: fixed;
+  align-items: center;
+  width: calc(100vw - 270px);
+  left: 220px;
+  z-index: 10;
+  height: 45px;
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ecebf5;
+}
+
+.navSearch {
+  background-color: #fafafc;
+  border: none;
+  border-radius: 5px;
+  height: 45px;
+  font-weight: 500;
+  font-size: var(--medium-font);
+  color: #a3a3c2;
+  width: 390px;
+  padding: 0.1em 1em;
+  position: relative;
+}
+.searchWrapper {
+  position: relative;
+}
+.searchIcon {
+  position: absolute;
+  right: 15px;
+  top: 13px;
+}
+
+.avatarSide {
+  display: flex;
+}
+
+.iconWrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 1px solid #ecebf5;
+  padding: 1em;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.notificationSide {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+  gap: 0.2em;
+  border-right: 1px solid #ecebf5;
+  padding-right: 0.5em;
+}
+
+.avatarSide {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5em;
+  cursor: pointer;
+}
+
+.circle {
+  padding-left: 0.5em;
+}
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+/* Media Queries for different Viewport */
+@media (max-width: 800px) {
+  .hamburger {
+    display: block;
+  }
+
+  .sidenavContainer {
+    left: var(--responsive-width) !important;
+  }
+
+  .responsiveContainer{
+    left: 0;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    background-color: red;
+    width: 300px;
+    z-index: 99;
+  }
+
+  .mainContent {
+    left: var(--responsive-width);
+  }
+
+  .navbar {
+    left: 0;
+    width: 100% !important;
+  justify-content: space-around;
+  }
+}
+
+@media (max-width: 700px) {
+  .navSearch {
+    width: 50vw;
+  }
+
+  .tabpanelHeader {
+    gap: 1em !important;
+    flex-wrap: wrap;
+  }
+
+  .tpanelRow {
+    flex-wrap: wrap;
+  }
+
+  .chartContainer {
+    width: 100% !important;
+    height: 100% !important;
+  }
+}

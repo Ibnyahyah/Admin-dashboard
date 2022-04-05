@@ -1,0 +1,38 @@
+@import url("http://fonts.cdnfonts.com/css/gelion");
+* {
+  /* /box-sizing: border-box; */
+  font-family: "Gelion", sans-serif;
+  font-weight: 500;
+}
+
+:root {
+  --search-bg-color: #fafafc;
+  --nav-border-color: #ecebf5;
+  --sideNav-hover-color: #6837ef;
+  --primary-color: #696d8c;
+  --text-black: #060213;
+  --green-bg: #25bb87;
+  --green-opacity: #25bb871a;
+  --google-grey: #e1e1eb;
+  --blue-color: #6837ef;
+
+  --sidenav--width: 200px;
+  --responsive-width: -205px;
+  --xx-small-font: 10px;
+  --x-small-font: 13px;
+  --medium-font: 15px;
+  --large-font: 18px;
+  --x-large-font: 20px;
+  --xx-large-font: 23px;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.chartContainer{
+  width: 810px;
+  height: 410px;
+}
