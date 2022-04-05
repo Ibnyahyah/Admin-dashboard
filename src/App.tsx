@@ -5,11 +5,12 @@ import "./assets/styles/global.css";
 import TabsComponent from "./components/Tabs";
 
 function App() {
-  const [isOpen, setOpen] = useState(false)
+  // const [isOpen, setOpen] = useState(false);
   return (
     <>
       <TopNavbar />
-      <Sidenav isOpen={isOpen} setOpen={setOpen} />
+      {/* <Sidenav isOpen={isOpen} setOpen={setOpen} /> */}
+      <Sidenav />
       <TabsComponent />
     </>
   );
